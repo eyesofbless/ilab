@@ -3,12 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/tablet.css">
     <title>ilab</title>
 </head>
 <body>
 <div class="header">
     <div class="header__content">
-        <img class="logo" src="/public/images/logos/astra-zeneca.png" alt="">
+        <div class="header__logo">
+            <div class="burger-icon">
+                <div class="burger-icon__line"></div>
+                <div class="burger-icon__line"></div>
+                <div class="burger-icon__line"></div>
+            </div>
+            <img class="logo" src="/public/images/logos/astra-zeneca.png" alt="">
+        </div>
         <div class="header__items">
             <a class="header__item">О программе</a>
             <a class="header__item">Зачем участвовать</a>
@@ -23,16 +31,25 @@
 <div class="main">
     <div class="hero">
         <div class="hero__title">
-            <h1>ЛАБОРАТОРИЯ <br> ИННОВАЦИЙ iLAB</h1>
+            <h1>ЛАБОРАТОРИЯ ИННОВАЦИЙ iLAB</h1>
             <p>для стартапов в области цифровой медицины</p>
         </div>
-        <div class="hero__picture">
-            <img src="/public/images/objects/obj-1.png" alt="">
-            <div class="hero__inscriptions-content">
-                <span class="hero__inscriptions-1">iLAB</span>
-                <div class="hero__inscriptions">
-                    <span>LAB</span>
-                    <span>iLAB</span>
+        <div class="hero__picture-wrapper">
+            <div class="hero__picture">
+                <img src="/public/images/objects/obj-1.png" alt="">
+                <div class="hero__inscriptions-content">
+                    <span class="hero__inscriptions-1">iLAB</span>
+                    <div class="hero__inscriptions">
+                        <span>LAB</span>
+                        <span>iLAB</span>
+                    </div>
+                </div>
+            </div>
+            <div class="hero__button">
+                <button>Подать заявку</button>
+                <div>
+                    <span>Прием заявок до</span>
+                    <span>31 марта 2021</span>
                 </div>
             </div>
         </div>
@@ -130,8 +147,14 @@
                 </div>
             </div>
         </div>
+        <div class="carousel">
+            <div class="carousel__item active"></div>
+            <div class="carousel__item"></div>
+            <div class="carousel__item"></div>
+        </div>
     </div>
     <div class="goals">
+        <h2>Цели программы</h2>
         <div class="goals__image">
             <img src="/public/images/objects/obj-2.png" alt="">
             <div class="goals__content">
@@ -339,32 +362,43 @@
     </div>
     <div class="stages">
         <h2>Этапы</h2>
-        <div class="stages__dates">
-            <span>15 – 31 Марта 2021</span>
-            <span>1 – 10 Апреля 2021</span>
-            <span>Апрель 2021</span>
-            <span>Май – Сентябрь 2021</span>
-            <span>Октябрь 2021</span>
-        </div>
-        <div class="stages__timeline">
-            <span></span>
-            <img src="/public/images/icons/chevrons-right.png" alt="">
-            <span></span>
-        </div>
-        <div class="stages__events">
-            <span>Поиск и привлечение проектов</span>
-            <span>Диагностика стартапов
-                <div class="exclamation-mark">
-                    Pitch Day<img src="/public/images/icons/exclamation-mark.png" alt="">
+        <div class="timeline">
+            <div class="timeline__line">
+                <div class="timeline__progress"></div>
+                <img class="timeline__marker" src="/public/images/icons/chevrons-right.png" alt="">
+            </div>
+            <div class="timeline__content">
+                <div class="timeline__item">
+                    <div class="timeline__date">15 – 31 Марта 2021</div>
+                    <div class="timeline__event">Поиск и привлечение проектов</div>
                 </div>
-            </span>
-            <span>Образовательный BootCamp</span>
-            <span>Акселерационный блок (4 – 6 месяцев)</span>
-            <span>Демо день Итоговая диагностика</span>
+                <div class="timeline__item">
+                    <div class="timeline__date">1 – 10 Апреля 2021</div>
+                    <div class="timeline__event">Диагностика стартапов
+                        <div class="exclamation-mark">
+                            Pitch Day<img src="/public/images/icons/exclamation-mark.png" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="timeline__item">
+                    <div class="timeline__date">Апрель 2021</div>
+                    <div class="timeline__event">Образовательный BootCamp</div>
+                </div>
+                <div class="timeline__item">
+                    <div class="timeline__date">Май – Сентябрь 2021</div>
+                    <div class="timeline__event">Акселерационный блок (4 – 6 месяцев)</div>
+                </div>
+                <div class="timeline__item">
+                    <div class="timeline__date">Октябрь 2021</div>
+                    <div class="timeline__event">Демо день Итоговая диагностика</div>
+                </div>
+            </div>
         </div>
     </div>
     <div class="mentors">
-        <div class="mentors__statistics">
+        <h2>Жюри и менторы</h2>
+        <div class="mentors__bg"></div>
+        <div class="mentors__content">
             <div class="mentors__statistics-content">
                 <div>
                     <span>20+ менторов</span>
@@ -379,9 +413,6 @@
                     <p>Индивидуальной работы (тестирование гипотез, custdev)</p>
                 </div>
             </div>
-        </div>
-        <div class="mentors__content">
-            <h2>Жюри и менторы</h2>
             <div class="mentors__cards">
                 <div class="person-card">
                     <div class="person-card__img">
@@ -474,12 +505,25 @@
                     </div>
                 </div>
             </div>
+            <div class="carousel">
+                <div class="carousel__item active"></div>
+                <div class="carousel__item"></div>
+                <div class="carousel__item"></div>
+                <div class="carousel__item"></div>
+                <div class="carousel__item"></div>
+                <div class="carousel__item"></div>
+                <div class="carousel__item"></div>
+            </div>
         </div>
     </div>
     <div class="project-team">
         <h2>Команда проекта</h2>
         <div class="project-team__content">
-            <img src="/public/images/icons/arrow-left-circle.png" alt="" width="50" height="50">
+            <img class="arrow-circle"
+                 src="/public/images/icons/arrow-left-circle.png"
+                 alt=""
+                 width="50"
+                 height="50">
             <div class="project-team__members">
                 <div class="person-card">
                     <div class="person-card__img platinum-background">
@@ -525,7 +569,20 @@
                     </div>
                 </div>
             </div>
-            <img src="/public/images/icons/arrow-right-circle.png" alt="" width="50" height="50">
+            <div class="carousel">
+                <div class="carousel__item active"></div>
+                <div class="carousel__item"></div>
+                <div class="carousel__item"></div>
+                <div class="carousel__item"></div>
+                <div class="carousel__item"></div>
+                <div class="carousel__item"></div>
+                <div class="carousel__item"></div>
+            </div>
+            <img class="arrow-circle"
+                 src="/public/images/icons/arrow-right-circle.png"
+                 alt=""
+                 width="50"
+                 height="50">
         </div>
     </div>
     <div class="documents">
@@ -553,6 +610,11 @@
                 </div>
             </div>
         </div>
+        <div class="carousel">
+            <div class="carousel__item active"></div>
+            <div class="carousel__item"></div>
+            <div class="carousel__item"></div>
+        </div>
     </div>
     <div class="sponsors">
         <h2>Организаторы</h2>
@@ -574,7 +636,11 @@
     <div class="partners">
         <h2>Партнеры</h2>
         <div class="partners__content">
-            <img src="/public/images/icons/arrow-left-circle.png" alt="" width="50" height="50">
+            <img class="arrow-circle"
+                 src="/public/images/icons/arrow-left-circle.png"
+                 alt=""
+                 width="50"
+                 height="50">
             <div class="organizations">
                 <div class="organization">
                     <img src="/public/images/logos/rostelecom.png" alt="">
@@ -589,26 +655,41 @@
                     <img src="/public/images/logos/rbv.png" alt="">
                 </div>
             </div>
-            <img src="/public/images/icons/arrow-right-circle.png" alt="" width="50" height="50">
+            <div class="carousel">
+                <div class="carousel__item active"></div>
+                <div class="carousel__item"></div>
+                <div class="carousel__item"></div>
+                <div class="carousel__item"></div>
+                <div class="carousel__item"></div>
+                <div class="carousel__item"></div>
+                <div class="carousel__item"></div>
+            </div>
+            <img class="arrow-circle"
+                 src="/public/images/icons/arrow-right-circle.png"
+                 alt=""
+                 width="50"
+                 height="50">
         </div>
     </div>
 </div>
 <div class="footer">
     <div class="footer__content">
-        <div class="footer__contacts">
+        <div class="footer__contacts-wrapper">
             <h2>Контакты</h2>
-            <div class="footer__contact">
-                <span>Контактное лицо</span>
-                <span>Елена Тихомирова</span>
-            </div>
-            <div class="footer__contact">
-                <a class="footer__mail">ilab@sk.ru</a>
-                <a class="footer__number">+7 (495) 956 00 33
-                    <span>(доб. 2076)</span>
-                </a>
-            </div>
-            <div class="hero__button">
-                <button>Подать заявку</button>
+            <div class="footer__contacts">
+                <div class="footer__contact">
+                    <span>Контактное лицо</span>
+                    <span>Елена Тихомирова</span>
+                </div>
+                <div class="footer__contact">
+                    <a class="footer__mail">ilab@sk.ru</a>
+                    <a class="footer__number">+7 (495) 956 00 33
+                        <span>(доб. 2076)</span>
+                    </a>
+                </div>
+                <div class="hero__button">
+                    <button>Подать заявку</button>
+                </div>
             </div>
         </div>
         <div class="footer__info">

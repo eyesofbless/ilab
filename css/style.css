@@ -7,7 +7,8 @@ h1 {
     font-size: 60px;
     color: #830051;
     line-height: 70px;
-    text-wrap: nowrap;
+    text-wrap: wrap;
+    width: 550px;
 }
 
 h2 {
@@ -32,6 +33,31 @@ h2 {
     justify-content: space-between;
     align-items: flex-end;
     padding: 28px 0 35px 0;
+}
+
+.header__logo {
+    display: flex;
+    gap:26px;
+    align-items: flex-end;
+}
+
+.burger-icon {
+    display: none;
+    flex-direction: column;
+    gap:3px;
+    align-items: center;
+    justify-content: center;
+    width: 36px;
+    height: 36px;
+    box-sizing: border-box;
+    padding: 12px 10px 12px 10px;
+    border-radius: 50%;
+    background-color: rgba(245, 245, 245, 1);
+}
+
+.burger-icon__line {
+    border-bottom: 2px solid rgba(131, 0, 81, 1);
+    width: 16px;
 }
 
 .logo {
@@ -71,29 +97,43 @@ h2 {
     font-size: 24px;
     width: 100%;
     max-width: 1280px;
+    box-sizing: border-box;
+}
+
+.hero__picture-wrapper {
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    align-items: flex-start;
+}
+
+.hero__picture-wrapper .hero__button {
+    display: none;
 }
 
 .hero__picture {
-    position: absolute;
-    top: 0;
-    width: 100vw;
-    max-width: 800px;
-    right: 0;
-    height: 100vw;
-    max-height: 780px;
+    position: relative;
+    width: clamp(340px, 50vw, 800px);
+    height: clamp(280px, 50vw, 780px);
     background: #F0AB00;
     display: flex;
     justify-content: center;
     z-index: 2;
     padding: 80px;
     box-sizing: border-box;
+    transition: all 0.5s ease;
 }
 
 .hero__picture img {
     position: absolute;
     bottom: 0;
-    height: 100%;
-    max-height: 690px;
+    width: clamp(206px, 40vw, 570px);
+    height: clamp(247px, 45vw, 683px);
+    max-height: 683px;
+    transition: all 0.5s ease;
 }
 
 .hero__inscriptions-content {
@@ -104,10 +144,10 @@ h2 {
 
 .hero__inscriptions-1, .hero__inscriptions span:first-child {
     margin: 0;
-    line-height: 195px;
+    line-height: clamp(85px,13vw,195px);
     color: #F0AB00;
     -webkit-text-stroke: 2px #FFFFFF;
-    font-size: 225px;
+    font-size: clamp(100px,15vw,225px);
     font-weight: 700;
 }
 
@@ -123,7 +163,7 @@ h2 {
 
 .hero__inscriptions span:last-child {
     color: white;
-    font-size: 110px;
+    font-size:clamp(40px,10vw,110px);
     font-weight: 700;
 }
 
@@ -212,9 +252,12 @@ h2 {
 }
 
 .video__content {
-    display: grid;
-    grid-template-columns: 1fr;
     position: relative;
+}
+
+.video__content img:first-child {
+    max-width: 100%;
+    height: auto;
 }
 
 .video__content img:last-child {
@@ -236,14 +279,16 @@ h2 {
 }
 
 .about-partners h2 {
-    width: 1280px;
+    width: 100%;
+    max-width: 1280px;
+    box-sizing: border-box;
 }
 
 .about-partners__content {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
     gap: 40px;
-    padding: 0 100px;
+    padding: 0 40px;
 }
 
 .about-partners__item {
@@ -287,6 +332,27 @@ h2 {
 .about-partners__statistics span:last-child {
     font-size: 16px;
     line-height: 24px;
+}
+
+.carousel {
+    display: none;
+    gap: 10px;
+    margin-top: 30px;
+}
+
+.carousel__item {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: rgba(63, 68, 68, 0.3);
+}
+
+.carousel__item:last-child {
+    display: flex;
+}
+
+.active {
+    background-color: rgba(131, 0, 81, 1);
 }
 
 /*goals*/
@@ -345,7 +411,7 @@ h2 {
 }
 
 .goals__list-line {
-    width: 100%; /* Длина линии */
+    width: 100%;
     height: 1px;
     background-color: #F0AB00; /* Основной цвет */
     mix-blend-mode: color-dodge;
@@ -375,12 +441,13 @@ h2 {
     max-width: 1280px;
     width: 100%;
     margin-bottom: 260px;
+    box-sizing: border-box;
 }
 
 .participation__content {
     display: flex;
     gap: 40px;
-    height: 485px;
+    box-sizing: border-box;
 }
 
 .participation__content-1 {
@@ -388,6 +455,7 @@ h2 {
     gap: 40px;
     flex-direction: column;
     width: 100%;
+
 }
 
 .participation__content-2 {
@@ -415,7 +483,7 @@ h2 {
     background-color: rgba(245, 245, 245, 1);
     padding: 50px;
     display: flex;
-    gap: 50px
+    gap: 50px;
 }
 
 .participation__item p {
@@ -682,7 +750,7 @@ h2 {
 }
 
 .direction__inscriptions span {
-    font-size: 120px;
+    font-size: clamp(54px,8vw,120px);
     line-height: 63px;
     font-weight: 700;
     letter-spacing: -5px;
@@ -698,80 +766,105 @@ h2 {
 /*stages*/
 
 .stages {
-    width: 100%;
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
+    position: relative;
+    width: 100%;
+    box-sizing: border-box;
+    gap: 55px;
     margin-bottom: 153px;
 }
 
 .stages h2 {
-    margin-top: 0;
-    margin-bottom: 55px;
-    width: 1280px;
+    width: 100%;
+    max-width: 1280px;
+    box-sizing: border-box;
 }
 
-.stages__dates {
+.timeline {
     display: flex;
-    gap: 40px;
-    margin-bottom: 30px;
+    align-items: center;
+    position: relative;
+    width: 100%;
+    box-sizing: border-box;
 }
 
-.stages__dates span {
+.timeline__content {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    margin: -30px auto 0 auto;
+    width: 1280px;
+
+}
+
+.timeline__line {
+    position: absolute;
+    width: 100%;
+    height: 4px;
+    background-color: rgba(131, 0, 81, 1);
+    top: 30%;
+    left: 0;
+    transform: translateY(-50%);
+}
+
+.timeline__progress {
+    position: absolute;
+    left: 0;
+    height: 100%;
+    width: 26%;
+    background-color: rgba(157, 176, 172, 1);
+}
+
+.timeline__marker {
+    width: 20px;
+    height: 20px;
+    background-color: rgba(131, 0, 81, 1);
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 27%;
+    padding: 8px;
+    transform: translate(-50%, -50%);
+    transition: left 0.3s ease-in-out;
+}
+
+.timeline__item {
+    width: 100%;
+    max-width: 220px;
+    text-align: left;
+    position: relative;
+}
+
+.timeline__date {
     font-size: 20px;
     line-height: 40px;
     color: rgba(131, 0, 81, 1);
-    width: 220px;
+    text-wrap: nowrap;
 }
 
-.stages__dates span:first-child {
+.timeline__item:first-child .timeline__date,
+.timeline__item:first-child .timeline__event {
     color: rgba(157, 176, 172, 1);
 }
 
-.stages__timeline {
+.timeline__event {
     display: flex;
-    align-items: center;
-    width: 100%;
-    margin-bottom: 50px;
-}
-
-.stages__timeline span:first-child {
-    border-top: 2px solid rgba(157, 176, 172, 1);
-    flex: 580px;
-}
-
-.stages__timeline img {
-    background-color: rgba(131, 0, 81, 1);
-    padding: 8px 7px 8px 9px;
-    border-radius: 50%;
-}
-
-.stages__timeline span:last-child {
-    border-bottom: 2px solid rgba(131, 0, 81, 1);
-    width: 1600px;
-}
-
-.stages__events {
-    display: flex;
-    gap: 40px;
-}
-
-.stages__events span {
-    width: 220px;
+    flex-direction: column;
+    margin-top: 80px;
+    border-radius: 8px;
     font-size: 20px;
     line-height: 30px;
+    font-weight: 700;
     color: rgba(15, 72, 139, 1);
-}
-
-.stages__events span:first-child {
-    color: rgba(157, 176, 172, 1);
 }
 
 .exclamation-mark {
     display: flex;
     align-items: center;
     gap: 5px;
+    text-wrap: nowrap;
 }
 
 /*mentors*/
@@ -782,9 +875,11 @@ h2 {
     width: 100%;
     display: flex;
     justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 
-.mentors__statistics {
+.mentors__bg {
     position: absolute;
     top: 0;
     right: 0;
@@ -792,8 +887,7 @@ h2 {
     justify-content: center;
     align-items: center;
     background-color: rgba(240, 171, 0, 1);
-    width: 100%;
-    max-width: 630px;
+    width: 40%;
     height: 840px;
 }
 
@@ -821,15 +915,22 @@ h2 {
 }
 
 .mentors__content {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
     max-width: 1280px;
     width: 100%;
     z-index: 1;
     margin-bottom: 130px;
+    box-sizing: border-box;
 }
 
-.mentors__content h2 {
+.mentors h2 {
     margin-top: 96px;
     margin-bottom: 74px;
+    width: 100%;
+    max-width: 1280px;
+    box-sizing: border-box;
 }
 
 .mentors__cards {
@@ -838,9 +939,20 @@ h2 {
     gap: 40px;
 }
 
-.person-card {
-    background-color: white;
+.mentors__cards .person-card {
     padding: 50px 65px 28px 65px;
+    box-sizing: border-box;
+}
+
+.person-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    background-color: white;
+    padding: 50px 0 28px 0;
+    width: 100%;
+    max-width: 290px;
 }
 
 .person-card__img {
@@ -905,20 +1017,27 @@ h2 {
 .project-team h2 {
     margin-top: 133px;
     margin-bottom: 67px;
-    width: 1280px;
+    max-width: 1280px;
+    width: 100%;
+    box-sizing: border-box;
 }
 
 .project-team__content {
     display: flex;
     align-items: center;
+    justify-content: space-between;
     gap: 80px;
     margin-bottom: 80px;
+    padding: 0 40px;
 }
 
 .project-team__members {
     display: grid;
-    grid-template-columns: repeat(4, 290px);
+    grid-template-columns: repeat(4, 1fr);
     gap: 40px;
+    width: 100%;
+    max-width: 1280px;
+    box-sizing: border-box;
 }
 
 .platinum-background {
@@ -942,6 +1061,7 @@ h2 {
     width: 100%;
     display: flex;
     justify-content: center;
+    align-items: center;
     flex-direction: column;
     padding-bottom: 120px;
 }
@@ -949,6 +1069,9 @@ h2 {
 .documents h2 {
     margin-bottom: 67px;
     margin-top: 0;
+    width: 100%;
+    max-width: 1280px;
+    box-sizing: border-box;
 }
 
 .documents__content {
@@ -1004,6 +1127,7 @@ h2 {
     max-width: 1280px;
     margin-top: 103px;
     margin-bottom: 47px;
+    box-sizing: border-box;
 }
 
 .organizations {
@@ -1012,6 +1136,7 @@ h2 {
     grid-template-columns: repeat(4, 1fr);
     width: 100%;
     max-width: 1280px;
+    box-sizing: border-box;
 }
 
 .organization {
@@ -1039,14 +1164,16 @@ h2 {
     max-width: 1280px;
     margin-top: 0;
     margin-bottom: 40px;
+    box-sizing: border-box;
 }
 
 .partners__content {
     width: 100%;
+    display: flex;
     justify-content: space-between;
     gap: 87px;
     align-items: center;
-    display: flex;
+    box-sizing: border-box;
 }
 
 /*footer*/
@@ -1071,8 +1198,14 @@ h2 {
     width: min-content;
 }
 
+.footer__contacts-wrapper {
+    display: flex;
+    gap: 206px;
+}
+
 .footer__contacts {
     display: flex;
+    width: 100%;
     justify-content: space-between;
     align-items: center;
 }

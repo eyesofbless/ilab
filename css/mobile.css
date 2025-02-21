@@ -1,0 +1,199 @@
+@media (max-width: 780px) {
+    .about-partners__item:first-child {
+        display: none;
+    }
+
+    .about-partners__content {
+        grid-template-columns: repeat(auto-fit, minmax(150px, 300px));
+    }
+}
+
+@media (max-width: 760px) {
+    .hero__picture-wrapper {
+        position: relative;
+        align-items: center;
+        width: 100%;
+        right: 0;
+    }
+    .hero__picture {
+        width: 100%;
+    }
+
+    .hero__picture-wrapper .hero__button {
+        display: none;
+    }
+
+    .hero__content .hero__button {
+        display: flex;
+        flex-direction: column-reverse;
+        text-align: center;
+        gap: 9px;
+    }
+
+    .hero__description {
+        flex-direction: column-reverse;
+        padding: 27px 20px;
+        margin-bottom: 0;
+        align-items: center;
+    }
+
+    .hero__description p {
+        margin-top: 0;
+    }
+
+
+}
+
+@media (max-width: 700px) {
+    /*stages*/
+
+    .timeline__event {
+        flex-direction: column;
+        text-wrap: wrap;
+    }
+
+    .person-card:nth-child(2) {
+        display: none;
+
+    }
+
+    .mentors__cards {
+        grid-template-columns: 1fr;
+    }
+
+    .project-team__members {
+        grid-template-columns: 1fr;
+    }
+
+    .mentors__statistics-content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    /*footer*/
+
+    .footer__contacts-wrapper {
+        gap: 23px;
+    }
+
+    .footer__contacts {
+        flex-direction: column;
+        gap: 35px;
+    }
+
+    .footer__contact {
+        text-align: center;
+    }
+
+    .footer__info {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    /*conditions*/
+
+    .conditions__description {
+        grid-template-columns: 1fr;
+    }
+
+}
+
+@media (max-width: 560px) {
+
+    /*participation*/
+
+    .participation {
+        margin-top: 50px;
+        margin-bottom: 150px;
+    }
+
+    .participation__content {
+        align-items: center;
+    }
+
+    .participation__content-1 .participation__item:last-child {
+        display: none;
+    }
+
+    .participation__content-2 {
+        display: none;
+    }
+
+    .participation .carousel {
+        margin-top: 0;
+        display: flex;
+    }
+
+    /*directions*/
+
+    .direction {
+        padding: 25px;
+    }
+    .direction:last-child {
+        height: 130px;
+        box-sizing: border-box;
+    }
+    .direction__inscriptions {
+        left: 10%;
+    }
+
+    .direction__title-plus {
+        width: 30px;
+        height: 30px;
+    }
+
+    .direction__title-minus {
+        width: 30px;
+        height: 30px;
+    }
+
+    .direction__title-plus span:last-child {
+        top: 35%;
+        height: 10px;
+    }
+
+    /*documents*/
+
+
+    .documents__item:nth-child(2) {
+        display: none;
+    }
+
+    .documents__content {
+        display: block;
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    /*sponsors*/
+
+    .sponsors .organizations .organization:nth-child(2) {
+        display: none;
+    }
+
+    .sponsors .organizations {
+        grid-template-columns: 1fr;
+    }
+
+    .sponsors .carousel {
+        display: flex;
+    }
+
+    .sponsors {
+        padding-bottom: 40px;
+    }
+
+    /*partners*/
+
+    .partners .organization {
+        width: 100%;
+        height: 100%;
+        max-height: 80px;
+    }
+
+    .partners .organization img {
+        max-width: 80%;
+        max-height: 80%;
+    }
+}
+

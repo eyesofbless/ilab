@@ -297,6 +297,13 @@ h2 {
     min-width: 150px;
 }
 
+.about-partners__image-wrapper {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+    height: 80px;
+}
+
 
 .about-partners__more {
     color: rgba(157, 176, 172, 1);
@@ -309,6 +316,7 @@ h2 {
     color: rgba(63, 68, 68, 1);
     font-size: 15px;
     line-height: 25px;
+    height: 300px;
 }
 
 .about-partners__statistics {
@@ -440,7 +448,7 @@ h2 {
 .participation {
     max-width: 1280px;
     width: 100%;
-    margin-bottom: 260px;
+    margin-bottom: 200px;
     box-sizing: border-box;
 }
 
@@ -546,6 +554,7 @@ h2 {
 
 .conditions__content {
     position: absolute;
+    width: 100%;
     top: -125px;
     display: flex;
     flex-direction: column;
@@ -565,7 +574,6 @@ h2 {
     background-position: center;
     display: flex;
     flex-direction: column;
-
     padding: 104px 110px 94px 110px;
 }
 
@@ -582,6 +590,7 @@ h2 {
     color: white;
     width: 770px;
     margin-bottom: 59px;
+
 }
 
 .conditions__participation {
@@ -607,6 +616,8 @@ h2 {
     grid-template-columns: 1fr 1fr 1fr;
     gap: 46px;
     max-width: 1280px;
+    width: 100%;
+    box-sizing: border-box;
 }
 
 .conditions__description-item {
@@ -619,6 +630,7 @@ h2 {
     line-height: 27px;
     color: rgba(63, 68, 68, 1);
     margin: 0;
+
 }
 
 .conditions__description-item img {
@@ -709,7 +721,7 @@ h2 {
 
 .direction__title-minus span {
     border-bottom: 2px solid white;
-    width: 17.5px;
+    width: 17px;
     border-radius: 5px;
 }
 
@@ -728,7 +740,7 @@ h2 {
 
 .direction__title-plus span:first-child {
     border-bottom: 2px solid rgba(131, 0, 81, 1);
-    width: 17.5px;
+    width: 17px;
     border-radius: 5px;
 }
 
@@ -736,7 +748,7 @@ h2 {
     position: absolute;
     top: 33%;
     border-left: 2px solid rgba(131, 0, 81, 1);
-    height: 17.5px;
+    height: 17px;
     border-radius: 5px;
 }
 
@@ -756,7 +768,6 @@ h2 {
     letter-spacing: -5px;
     -webkit-text-stroke: 1px #FFFFFF; /* Толщина и цвет обводки */
     color: #F0AB00;
-
 }
 
 .direction__inscriptions span:nth-child(2) {
@@ -1145,6 +1156,10 @@ h2 {
     align-items: center;
     background-color: #FFFFFF;
     height: 160px;
+}
+
+.organization img {
+
 }
 
 /*partners*/

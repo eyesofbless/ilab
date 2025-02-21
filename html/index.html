@@ -2,8 +2,10 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="/css/style.css">
     <link rel="stylesheet" href="/css/tablet.css">
+    <link rel="stylesheet" href="/css/mobile.css">
     <title>ilab</title>
 </head>
 <body>
@@ -25,7 +27,7 @@
             <a class="header__item">Этапы</a>
             <a class="header__item">Контакты</a>
         </div>
-        <img src="/public/images/logos/sk-logo.png" alt="">
+        <img class="sk-logo" src="/public/images/logos/sk-logo.png" alt="">
     </div>
 </div>
 <div class="main">
@@ -83,7 +85,9 @@
         <h2>О партнерах iLAB</h2>
         <div class="about-partners__content">
             <div class="about-partners__item">
-                <img src="/public/images/logos/astra-zeneca.png" alt="">
+                <div class="about-partners__image-wrapper">
+                    <img src="/public/images/logos/astra-zeneca.png" alt="" height="55">
+                </div>
                 <p>
                     Международная научно-ориентированная биофармацевтическая компания, нацеленная на исследование,
                     разработку и вывод на рынок рецептурных препаратов преимущественно в таких терапевтических областях,
@@ -99,7 +103,9 @@
                 </div>
             </div>
             <div class="about-partners__item">
-                <img src="/public/images/logos/hadassah.png" alt="">
+                <div class="about-partners__image-wrapper">
+                    <img src="/public/images/logos/hadassah.png" alt="" height="46">
+                </div>
                 <p>
                     Первый в России медицинский клинико-диагностический центр под управлением иностранного
                     университетского госпиталя со столетней историей – Hadassah, единственной израильской больницы,
@@ -115,7 +121,9 @@
                 </div>
             </div>
             <div class="about-partners__item">
-                <img src="/public/images/logos/rostelecom.png" alt="">
+                <div class="about-partners__image-wrapper">
+                    <img src="/public/images/logos/rostelecom.png" alt="">
+                </div>
                 <p>
                     Крупнейший в России интегрированный провайдер цифровых услуг и решений, который присутствует во всех
                     сегментах рынка и охватывает миллионы домохозяйств, государственных и частных организаций. Занимает
@@ -131,7 +139,9 @@
                 </div>
             </div>
             <div class="about-partners__item">
-                <img src="/public/images/logos/healthcare.png" alt="">
+                <div class="about-partners__image-wrapper">
+                    <img src="/public/images/logos/healthcare.png" alt="">
+                </div>
                 <p>
                     GE Healthcare – бизнес-подразделение GE (NYSE: GE) с оборотом $16,7 млрд. Являясь одним из ведущих
                     мировых производителей передового медицинского оборудования и цифровых решений, GE Healthcare
@@ -247,6 +257,11 @@
                     <img src="/public/images/icons/check-square.png" alt="">
                     <span>Интеграции</span>
                 </div>
+            </div>
+            <div class="carousel">
+                <div class="carousel__item active"></div>
+                <div class="carousel__item"></div>
+                <div class="carousel__item"></div>
             </div>
         </div>
     </div>
@@ -631,6 +646,11 @@
             <div class="organization">
                 <img src="/public/images/logos/healthcare.png" alt="">
             </div>
+        </div>
+        <div class="carousel">
+            <div class="carousel__item active"></div>
+            <div class="carousel__item"></div>
+            <div class="carousel__item"></div>
         </div>
     </div>
     <div class="partners">

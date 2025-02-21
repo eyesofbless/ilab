@@ -1,9 +1,5 @@
 @media (max-width: 1354px) {
-    .header {
-        margin: 0 40px;
-    }
-
-    .video {
+    .header, video {
         margin: 0 40px;
     }
 
@@ -17,6 +13,10 @@
 
     h2 {
         padding: 0 40px;
+    }
+
+    .conditions h2, .directions h2 {
+        padding: 0;
     }
 
     .about-partners__item:last-child {
@@ -50,6 +50,7 @@
     .project-team__members .person-card:last-child {
         display: none;
     }
+
     .project-team__members {
         grid-template-columns: repeat(3, 1fr);
     }
@@ -75,7 +76,6 @@
 @media (max-width: 1218px) {
 
     /*header*/
-
     .burger-icon {
         display: flex;
     }
@@ -124,16 +124,15 @@
     }
 
     .hero__inscriptions-1, .hero__inscriptions span:first-child {
-        font-size:100px;
+        font-size: 100px;
         line-height: 85px;
     }
 
     .hero__inscriptions span:last-child {
-        font-size:40px;
+        font-size: 40px;
     }
 
     /*about-partners*/
-
     .about-partners {
         padding-bottom: 65px;
     }
@@ -142,7 +141,7 @@
     .goals {
         padding: 0 40px;
         box-sizing: border-box;
-        margin-bottom: 227px;
+        margin-bottom: 180px;
     }
 
     .goals h2 {
@@ -167,7 +166,7 @@
         flex-direction: column;
         justify-content: space-between;
         left: 0;
-        top:60%;
+        top: 60%;
         height: 315px;
     }
 
@@ -224,27 +223,6 @@
         width: max-content;
     }
 
-    .participation__item li {
-        font-size: 15px;
-        line-height: 24px;
-    }
-
-
-    .participation__item h3 {
-        font-size: 22px;
-        line-height: 32px;
-    }
-
-    .participation__item p {
-        font-size: 15px;
-        line-height: 24px;
-    }
-
-    .participation__item img {
-        width: 70px;
-        height: 70px;
-    }
-
     .participation__content {
         flex-direction: column;
     }
@@ -263,7 +241,6 @@
     }
 
     /*directions*/
-
     .directions {
         margin-bottom: 60px;
     }
@@ -299,7 +276,6 @@
     }
 
     /*stages*/
-
     .stages {
         padding: 0;
         width: max-content;
@@ -308,7 +284,7 @@
     }
 
     .stages h2 {
-        display: flex;
+        text-align: center;
     }
 
     .timeline__content {
@@ -357,12 +333,11 @@
 
     .timeline__date {
         text-wrap: nowrap;
-        font-size: 17px;
     }
 
     .timeline__event {
         flex-direction: row;
-        gap:5px;
+        gap: 5px;
         text-wrap: nowrap;
         flex: 1;
         border-radius: 8px;
@@ -405,10 +380,10 @@
     }
 
     /*project-team*/
-
     .project-team__members .person-card:nth-child(3) {
         display: none;
     }
+
     .project-team__members {
         grid-template-columns: repeat(2, 1fr);
     }
@@ -419,7 +394,7 @@
 
     .project-team__content {
         flex-direction: column;
-        gap:0;
+        gap: 0;
     }
 
     .project-team .arrow-circle {
@@ -441,7 +416,6 @@
     }
 
     /*documents*/
-
     .documents {
         padding: 0;
     }
@@ -466,7 +440,6 @@
     }
 
     /*sponsors*/
-
     .sponsors h2 {
         width: max-content;
     }
@@ -480,7 +453,6 @@
     }
 
     /*partners*/
-
     .partners {
         margin: 0 34px;
         padding: 0;
@@ -505,12 +477,12 @@
     }
 
     /*footer*/
-
     .footer__contacts-wrapper {
         flex-direction: column;
         align-items: center;
         gap: 46px;
     }
+
     .footer__content {
         gap: 43px;
     }
@@ -519,11 +491,29 @@
 
 @media (max-width: 1024px) {
 
+    /*common*/
     h1 {
         font-size: 40px;
         line-height: 40px;
     }
 
+    h2 {
+        font-size: 32px;
+        line-height: 32px;
+    }
+
+    /*header*/
+    .logo {
+        width: 174px;
+        height: 42px;
+    }
+
+    .sk-logo {
+        width: 58px;
+        height: 42px;
+    }
+
+    /*hero*/
     .hero {
         margin-bottom: 0;
     }
@@ -551,8 +541,24 @@
         display: none;
     }
 
+    /*about-partners*/
     .about-partners h2 {
         width: max-content;
+        margin-top: 60px;
+    }
+
+    .about-partners__statistics {
+        display: none;
+    }
+
+    .about-partners__item {
+        padding: 25px;
+    }
+
+    .about-partners__item p {
+        font-size: 14px;
+        line-height: 22px;
+        height: 168px;
     }
 
     .about-partners__item:nth-child(3) {
@@ -563,12 +569,160 @@
         display: block;
     }
 
+    /*goals*/
+    .goals__content-item p {
+        font-size: 14px;
+        line-height: 24px;
+    }
+
+
+    /*participation*/
+    .participation {
+        margin-bottom: 63px;
+    }
+
+    .participation__item li {
+        font-size: 15px;
+        line-height: 24px;
+    }
+
+
+    .participation__item h3 {
+        font-size: 22px;
+        line-height: 32px;
+    }
+
+    .participation__item p {
+        font-size: 15px;
+        line-height: 24px;
+    }
+
+    .participation__item img {
+        width: 70px;
+        height: 70px;
+    }
+
+    /*conditions*/
+
+    .conditions {
+        height: 100%;
+    }
+
+    .conditions__content {
+        position: static;
+    }
+
     .conditions__image {
         padding: 50px 40px 42px 40px;
     }
 
-    .conditions__description {
-        grid-template-columns: 1fr 1fr;
+    .conditions__image p  {
+        width: 700px;
     }
 
+    .conditions__description {
+        grid-template-columns: 1fr 1fr;
+        padding-bottom: 40px;
+    }
+
+    .conditions__description-item {
+    }
+
+    /*directions*/
+
+    .directions h2 {
+        margin-top: 0;
+    }
+
+    .direction:first-child h3 {
+        font-size: 20px;
+        line-height: 20px;
+    }
+
+    .direction:last-child h3 {
+        font-size: 24px;
+        line-height: 20px;
+    }
+
+    .direction:first-child p {
+        font-size: 15px;
+        line-height: 24px;
+        margin-top: 24px;
+    }
+
+    /*stages*/
+    .timeline__date {
+        font-size: 17px;
+    }
+
+    /*mentors*/
+    .mentors__statistics-content span {
+        font-size: 24px;
+    }
+
+    .mentors__statistics-content p {
+        font-size: 15px;
+        line-height: 24px;
+    }
+
+    /*documents*/
+    .documents__item p {
+        font-size: 16px;
+        line-height: 22px;
+    }
+
+    .documents__item {
+        padding: 22px 20px 20px 25px;
+        height: 130px;
+    }
+
+    /*footer*/
+    .footer__content {
+        margin-top: 60px;
+    }
+
+    .footer__content h2 {
+        margin-top: 0;
+    }
+
+    .footer__contact:first-child span:first-child {
+        font-size: 12px;
+    }
+
+    .footer__contact:first-child span:last-child {
+        font-size: 16px;
+        line-height: 22px;
+    }
+
+    .footer__mail {
+        font-size: 14px;
+    }
+
+    .footer__number {
+        font-size: 24px;
+        line-height: 22px;
+    }
+
+    .footer__contact {
+        gap: 5px;
+    }
+
+    .footer__info {
+        gap: 5px;
+    }
+
+    .footer__info a {
+        font-size: 12px;
+    }
+
+}
+
+@media (max-width: 940px) {
+    .organization:nth-child(3) {
+        display: none;
+    }
+
+    .organizations {
+        grid-template-columns: repeat(2, 1fr);
+    }
 }

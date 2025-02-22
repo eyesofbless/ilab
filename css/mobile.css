@@ -9,12 +9,15 @@
 }
 
 @media (max-width: 760px) {
+
+    /*hero*/
     .hero__picture-wrapper {
         position: relative;
         align-items: center;
         width: 100%;
         right: 0;
     }
+
     .hero__picture {
         width: 100%;
     }
@@ -33,20 +36,51 @@
     .hero__description {
         flex-direction: column-reverse;
         padding: 27px 20px;
+        margin-top: 25px;
         margin-bottom: 0;
         align-items: center;
     }
 
     .hero__description p {
         margin-top: 0;
+        width: 100%;
+    }
+
+    .hero__description-content span {
+        color: rgba(240, 171, 0, 1);
+        font-size: 12px;
+        line-height: 24px;
+    }
+
+    /*conditions*/
+    .conditions__info {
+        flex-direction: column;
+        align-items: center;
+        gap: 26px;
+    }
+
+    .conditions__info img {
+        width: 21px;
+        height: 21px;
+    }
+
+    .conditions__info .hero__button {
+        flex-direction: column-reverse;
+        text-align: center;
+        gap: 9px;
     }
 
 
 }
 
 @media (max-width: 700px) {
-    /*stages*/
 
+    /*conditions*/
+    .conditions__description {
+        grid-template-columns: 1fr;
+    }
+
+    /*stages*/
     .timeline__event {
         flex-direction: column;
         text-wrap: wrap;
@@ -57,21 +91,23 @@
 
     }
 
+    /*mentors*/
     .mentors__cards {
-        grid-template-columns: 1fr;
-    }
-
-    .project-team__members {
         grid-template-columns: 1fr;
     }
 
     .mentors__statistics-content {
         flex-direction: column;
         align-items: center;
+
+    }
+
+    /*project-team*/
+    .project-team__members {
+        grid-template-columns: 1fr;
     }
 
     /*footer*/
-
     .footer__contacts-wrapper {
         gap: 23px;
     }
@@ -90,25 +126,85 @@
         align-items: center;
     }
 
-    /*conditions*/
-
-    .conditions__description {
-        grid-template-columns: 1fr;
-    }
-
 }
 
 @media (max-width: 560px) {
 
-    /*participation*/
+    /*common*/
+    h1 {
+        font-size: 30px;
+    }
 
+    h2 {
+        font-size: 26px;
+        padding: 0 20px;
+    }
+
+
+    /*hero*/
+    .hero__title {
+        padding: 0 20px;
+        text-align: center;
+    }
+
+    /*conditions*/
+    .conditions__description {
+        padding: 40px 20px;
+    }
+
+    .conditions__image {
+        padding: 40px 20px;
+    }
+
+    .conditions__content {
+        gap: 0;
+    }
+
+    /*directions*/
+    .directions__content-wrapper {
+        padding: 0 20px;
+    }
+
+
+    /*header*/
+    .header {
+        margin: 0 20px;
+    }
+
+    .logo {
+        width: 148px;
+        height: 36px;
+    }
+
+    .sk-logo {
+        width: 50px;
+        height: 36px;
+    }
+
+    /*hero*/
+    .hero__title p {
+        font-size: 16px;
+        line-height: 22px;
+        width: 100%;
+    }
+
+    .hero__description p {
+        height: 170px;
+        overflow: hidden;
+    }
+
+    .hero__description-content span {
+        display: block;
+    }
+
+    /*participation*/
     .participation {
         margin-top: 50px;
-        margin-bottom: 150px;
     }
 
     .participation__content {
         align-items: center;
+        padding: 0 20px;
     }
 
     .participation__content-1 .participation__item:last-child {
@@ -124,15 +220,22 @@
         display: flex;
     }
 
-    /*directions*/
+    .participation__content-1 .participation__item:first-child {
+        flex-direction: column;
+        align-items: center;
+        padding: 24px;
+    }
 
+    /*directions*/
     .direction {
         padding: 25px;
     }
+
     .direction:last-child {
         height: 130px;
         box-sizing: border-box;
     }
+
     .direction__inscriptions {
         left: 10%;
     }
@@ -152,9 +255,43 @@
         height: 10px;
     }
 
+    /*mentors*/
+    .mentors__content {
+        padding: 0 20px
+    }
+
+
+    /*goals*/
+    .goals {
+        margin-bottom: 300px;
+        padding: 0 20px;
+    }
+
+    .goals__content-item:first-child .goals__list-line {
+        height: 120px;
+    }
+
+    /*about-partners*/
+    .about-partners__content {
+        padding: 0 20px;
+    }
+
+    /*timeline*/
+    .timeline__event {
+        font-size: 16px;
+        line-height: 22px;
+    }
+
+    .timeline__date {
+        font-size: 14px;
+        line-height: 22px;
+    }
+
+    .project-team__content {
+        padding: 0 20px;
+    }
+
     /*documents*/
-
-
     .documents__item:nth-child(2) {
         display: none;
     }
@@ -163,10 +300,10 @@
         display: block;
         width: 100%;
         box-sizing: border-box;
+        padding: 0 20px;
     }
 
     /*sponsors*/
-
     .sponsors .organizations .organization:nth-child(2) {
         display: none;
     }
@@ -183,8 +320,11 @@
         padding-bottom: 40px;
     }
 
-    /*partners*/
+    .organizations {
+        padding: 0 20px;
+    }
 
+    /*partners*/
     .partners .organization {
         width: 100%;
         height: 100%;
@@ -195,5 +335,12 @@
         max-width: 80%;
         max-height: 80%;
     }
+
+    /*footer*/
+
+    .footer__content {
+        padding: 0 20px;
+    }
 }
+
 

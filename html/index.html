@@ -9,10 +9,41 @@
     <title>ilab</title>
 </head>
 <body>
+<div class="menu-popup__overlay" id="overlay" onclick="toggleMenu()"></div>
+<div class="menu-popup">
+    <div class="menu-popup__content">
+        <div class="menu-popup__navigation">
+            <div class="header__items">
+                <a class="header__item">О программе</a>
+                <a class="header__item">Зачем участвовать</a>
+                <a class="header__item">Кого мы ищем</a>
+                <a class="header__item">Направления</a>
+                <a class="header__item">Этапы</a>
+                <a class="header__item">Контакты</a>
+            </div>
+            <div class="footer__contacts">
+                <div class="hero__button">
+                    <button>Подать заявку</button>
+                </div>
+                <div class="footer__contact">
+                    <span>Контактное лицо</span>
+                    <span>Елена Тихомирова</span>
+                </div>
+                <div class="footer__contact">
+                    <a class="footer__mail">ilab@sk.ru</a>
+                    <a class="footer__number">+7 (495) 956 00 33 <br>
+                        <span>(доб. 2076)</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <img onclick="toggleMenu()" src="/public/images/icons/cross.png" alt="">
+    </div>
+</div>
 <div class="header">
     <div class="header__content">
         <div class="header__logo">
-            <div class="burger-icon">
+            <div onclick="toggleMenu()" class="burger-icon">
                 <div class="burger-icon__line"></div>
                 <div class="burger-icon__line"></div>
                 <div class="burger-icon__line"></div>
@@ -57,13 +88,16 @@
         </div>
         <div class="hero__content">
             <div class="hero__description">
-                <p>
-                    Мы собрали компетенции Фонда «Сколково», научно-технологическую и отраслевую экспертизу партнеров, а
-                    также клиническую базу медицинского центра Hadassah Medical Moscow для доработки и внедрения
-                    инновационных решений цифровой медицины под потребности врачей и пациентов.
-                    Проект реализуется совместными усилиями Фонда «Сколково», медицинской клиники Hadassah Medical
-                    Moscow и биофармацевтической компании AstraZeneca при поддержке компании ПАО «Ростелеком».
-                </p>
+                <div class="hero__description-content">
+                    <p>
+                        Мы собрали компетенции Фонда «Сколково», научно-технологическую и отраслевую экспертизу партнеров, а
+                        также клиническую базу медицинского центра Hadassah Medical Moscow для доработки и внедрения
+                        инновационных решений цифровой медицины под потребности врачей и пациентов.
+                        Проект реализуется совместными усилиями Фонда «Сколково», медицинской клиники Hadassah Medical
+                        Moscow и биофармацевтической компании AstraZeneca при поддержке компании ПАО «Ростелеком».
+                    </p>
+                    <span>Читать далее</span>
+                </div>
                 <div class="hero__button">
                     <button>Подать заявку</button>
                     <div>
@@ -719,5 +753,6 @@
         </div>
     </div>
 </div>
+<script src="/js/open-menu.js"></script>
 </body>
 </html>

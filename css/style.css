@@ -18,6 +18,64 @@ h2 {
     color: rgba(15, 72, 139, 1);
 }
 
+/*menu-popup*/
+
+.menu-popup {
+    position: fixed;
+    top: 0;
+    left: -1000px;
+    width: 320px;
+    height: 100%;
+    background-color: white;
+    color: black;
+    transition: left 0.3s ease-in-out;
+    padding: 50px;
+    z-index: 1000;
+    box-sizing: border-box;
+}
+
+.menu-popup.show {
+    left: 0;
+}
+
+.menu-popup__content {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.menu-popup__navigation {
+    display: flex;
+    flex-direction: column;
+    gap: 35px
+}
+
+.menu-popup__item {
+    font-weight: 600;
+}
+
+.menu-popup__content img {
+    cursor: pointer;
+}
+
+.menu-popup__overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease-in-out;
+    z-index: 1000;
+}
+
+.menu-popup__overlay.menu-active {
+    opacity: 1;
+    visibility: visible;
+}
+
 /*header*/
 
 .header {
@@ -73,6 +131,7 @@ h2 {
     font-size: 16px;
     font-weight: 700;
     color: #0F488B;
+    cursor: pointer;
 }
 
 /*hero*/
@@ -169,7 +228,7 @@ h2 {
 
 .hero__content {
     position: relative;
-    background-image: url('/ilab/public/images/hero-back.jpg');
+    background-image: url('public/images/hero-back.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -206,6 +265,10 @@ h2 {
     font-size: 17px;
     line-height: 27px;
     margin-top: 80px;
+}
+
+.hero__description-content span{
+    display: none;
 }
 
 .hero__button {
@@ -568,7 +631,7 @@ h2 {
     height: 100%;
     max-width: 1280px;
     box-sizing: border-box;
-    background-image: url('/ilab/public/images/team.png');
+    background-image: url('public/images/team.png');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -588,8 +651,9 @@ h2 {
     font-size: 17px;
     line-height: 27px;
     color: white;
-    width: 770px;
+    width: 100%;
     margin-bottom: 59px;
+    text-wrap: wrap;
 
 }
 

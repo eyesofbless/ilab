@@ -1,24 +1,6 @@
 @media (max-width: 1354px) {
-    .header, video {
-        margin: 0 40px;
-    }
 
-    .hero__description {
-        padding: 0 40px;
-    }
-
-    .hero__title {
-        padding: 0 40px;
-    }
-
-    h2 {
-        padding: 0 40px;
-    }
-
-    .conditions h2, .directions h2 {
-        padding: 0;
-    }
-
+    /*about-partners*/
     .about-partners__item:last-child {
         display: none;
     }
@@ -27,26 +9,12 @@
         display: flex;
     }
 
-    .conditions__description {
-        padding: 0 40px;
-    }
-
-    .directions__content-wrapper {
-        padding: 0 40px;
-    }
-
-    .timeline__content {
-        padding: 0 40px;
-    }
-
-    .mentors__content {
-        padding: 0 40px
-    }
-
+    /*mentors*/
     .mentors__cards {
         grid-template-columns: repeat(2, 1fr);
     }
 
+    /*project-team*/
     .project-team__members .person-card:last-child {
         display: none;
     }
@@ -55,20 +23,30 @@
         grid-template-columns: repeat(3, 1fr);
     }
 
-    .documents__content {
+    /*common*/
+    .documents__content,
+    .organizations,
+    .participation__content,
+    .footer__content,
+    .mentors__content,
+    .directions__content-wrapper,
+    .timeline__content,
+    .conditions__description,
+    .hero__description,
+    .hero__title {
         padding: 0 40px;
     }
 
-    .organizations {
+    h2 {
         padding: 0 40px;
     }
 
-    .participation__content {
-        padding: 0 40px;
+    .header, video {
+        margin: 0 40px;
     }
 
-    .footer__content {
-        padding: 0 40px;
+    .conditions h2, .directions h2 {
+        padding: 0;
     }
 
 }
@@ -83,6 +61,27 @@
     .header__items {
         display: none;
     }
+
+    .menu-popup .header__items {
+        display: flex;
+        flex-direction: column;
+        gap: 25px;
+    }
+
+    .menu-popup .footer__contacts {
+        align-items: flex-start;
+        gap: 17px;
+    }
+
+    .menu-popup .footer__contact {
+        text-align: left;
+        gap: 17px;
+        text-wrap: nowrap;
+    }
+
+    .menu-popup .hero__button {
+        margin-bottom: 30px;
+    }
 }
 
 @media (max-width: 1184px) {
@@ -91,6 +90,7 @@
         width: 100%;
     }
 
+    /*hero*/
     .hero__title p {
         width: 340px;
     }
@@ -219,6 +219,8 @@
         align-items: center;
     }
 
+    /*participation*/
+
     .participation h2 {
         width: max-content;
     }
@@ -285,6 +287,7 @@
 
     .stages h2 {
         text-align: center;
+        margin-top: 0;
     }
 
     .timeline__content {
@@ -304,7 +307,7 @@
     .timeline__line {
         width: 4px;
         height: 88%;
-        left: 0;
+        left: 0px;
         top: 26%;
         transform: translateY(-30%);
     }
@@ -356,23 +359,26 @@
 
     .mentors h2 {
         width: max-content;
+        margin: 40px 0;
     }
 
     .mentors__content {
         flex-direction: column;
         align-items: center;
+        margin-bottom: 72px;
     }
 
     .mentors__statistics-content {
         flex-direction: row;
         width: 100%;
         justify-content: center;
+        margin-bottom: 53px;
+        gap: 35px;
     }
 
     .mentors__statistics-content div {
         width: 220px;
         text-align: center;
-        margin-bottom: 53px;
     }
 
     .mentors .carousel {
@@ -442,6 +448,7 @@
     /*sponsors*/
     .sponsors h2 {
         width: max-content;
+        margin-top: 60px;
     }
 
     .organizations {
@@ -460,6 +467,7 @@
 
     .partners h2 {
         width: max-content;
+
     }
 
     .partners .arrow-circle {
@@ -485,6 +493,7 @@
 
     .footer__content {
         gap: 43px;
+        margin-top: 0;
     }
 
 }
@@ -603,7 +612,6 @@
     }
 
     /*conditions*/
-
     .conditions {
         height: 100%;
     }
@@ -616,8 +624,8 @@
         padding: 50px 40px 42px 40px;
     }
 
-    .conditions__image p  {
-        width: 700px;
+    .conditions__image p {
+
     }
 
     .conditions__description {
@@ -629,7 +637,6 @@
     }
 
     /*directions*/
-
     .directions h2 {
         margin-top: 0;
     }

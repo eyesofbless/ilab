@@ -1,28 +1,5 @@
 @media (max-width: 1354px) {
 
-    /*about-partners*/
-    .about-partners__item:last-child {
-        display: none;
-    }
-
-    .about-partners .carousel {
-        display: flex;
-    }
-
-    /*mentors*/
-    .mentors__cards {
-        grid-template-columns: repeat(2, 1fr);
-    }
-
-    /*project-team*/
-    .project-team__members .person-card:last-child {
-        display: none;
-    }
-
-    .project-team__members {
-        grid-template-columns: repeat(3, 1fr);
-    }
-
     /*common*/
     .documents__content,
     .organizations,
@@ -47,6 +24,29 @@
 
     .conditions h2, .directions h2 {
         padding: 0;
+    }
+
+    /*about-partners*/
+    .about-partners__item:last-child {
+        display: none;
+    }
+
+    .about-partners .carousel {
+        display: flex;
+    }
+
+    /*mentors*/
+    .mentors__cards {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    /*project-team*/
+    .project-team__members .person-card:last-child {
+        display: none;
+    }
+
+    .project-team__members {
+        grid-template-columns: repeat(3, 1fr);
     }
 
 }
@@ -213,16 +213,16 @@
         height: 100%;
     }
 
-    .participation {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-
     /*participation*/
 
     .participation h2 {
         width: max-content;
+    }
+
+    .participation {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
 
     .participation__content {

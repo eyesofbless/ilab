@@ -140,32 +140,6 @@
         padding: 0 20px;
     }
 
-
-    /*hero*/
-    .hero__title {
-        padding: 0 20px;
-        text-align: center;
-    }
-
-    /*conditions*/
-    .conditions__description {
-        padding: 40px 20px;
-    }
-
-    .conditions__image {
-        padding: 40px 20px;
-    }
-
-    .conditions__content {
-        gap: 0;
-    }
-
-    /*directions*/
-    .directions__content-wrapper {
-        padding: 0 20px;
-    }
-
-
     /*header*/
     .header {
         margin: 0 20px;
@@ -181,7 +155,13 @@
         height: 36px;
     }
 
+
     /*hero*/
+    .hero__title {
+        padding: 0 20px;
+        text-align: center;
+    }
+
     .hero__title p {
         font-size: 16px;
         line-height: 22px;
@@ -195,6 +175,23 @@
 
     .hero__description-content span {
         display: block;
+    }
+
+    /*about-partners*/
+    .about-partners__content {
+        padding: 0 20px;
+    }
+
+
+
+    /*goals*/
+    .goals {
+        margin-bottom: 300px;
+        padding: 0 20px;
+    }
+
+    .goals__content-item:first-child .goals__list-line {
+        height: 120px;
     }
 
     /*participation*/
@@ -226,9 +223,26 @@
         padding: 24px;
     }
 
+    /*conditions*/
+    .conditions__description {
+        padding: 40px 20px;
+    }
+
+    .conditions__image {
+        padding: 40px 20px;
+    }
+
+    .conditions__content {
+        gap: 0;
+    }
+
     /*directions*/
     .direction {
         padding: 25px;
+    }
+
+    .directions__content-wrapper {
+        padding: 0 20px;
     }
 
     .direction:last-child {
@@ -255,28 +269,7 @@
         height: 10px;
     }
 
-    /*mentors*/
-    .mentors__content {
-        padding: 0 20px
-    }
-
-
-    /*goals*/
-    .goals {
-        margin-bottom: 300px;
-        padding: 0 20px;
-    }
-
-    .goals__content-item:first-child .goals__list-line {
-        height: 120px;
-    }
-
-    /*about-partners*/
-    .about-partners__content {
-        padding: 0 20px;
-    }
-
-    /*timeline*/
+    /*stages*/
     .timeline__event {
         font-size: 16px;
         line-height: 22px;
@@ -287,6 +280,12 @@
         line-height: 22px;
     }
 
+    /*mentors*/
+    .mentors__content {
+        padding: 0 20px
+    }
+
+    /*project-team*/
     .project-team__content {
         padding: 0 20px;
     }
